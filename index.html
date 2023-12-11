@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Simon Says</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="js-heading">Simon Says</h1>
+
+      <section class="game-controls">
+        <div class="js-level-container">
+          <button data-level="1" class="level-button js-level-button level-button-selected">level 1</button>
+          <button data-level="2" class="level-button js-level-button">level 2</button>
+          <button data-level="3" class="level-button js-level-button">level 3</button>
+          <button data-level="4" class="level-button js-level-button">level 4</button>
+        </div>
+        <button class="start-button js-start-button">start</button>
+        <span class="status hidden js-status"></span>
+      </section>
+
+      <section class="pad-container unclickable js-pad-container">
+        <div class="pad pad-red js-pad-red" data-color="red"><img data-color="red" src="assets/note-red.png"></div>
+        <div class="pad pad-green js-pad-green" data-color="green"><img data-color="green" src="assets/note-green.png"></div>
+        <div class="pad pad-blue js-pad-blue" data-color="blue"><img data-color="blue" src="assets/note-blue.png"></div>
+        <div class="pad pad-yellow js-pad-yellow" data-color="yellow"><img data-color="yellow" src="assets/note-yellow.png"></div>
+      </section>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
